@@ -1,0 +1,239 @@
+html {
+    /* background-color: #F9629F; */
+    background: #FBD3E9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F9629F, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F9629F, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+body, .hero, .title, .subtitle, .label, .input, .button {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.wc-toast {
+    font-family: 'IBM Plex Sans Arabic' !important;
+    direction: ltr;
+}
+
+wc-toast-item {
+	--wc-toast-font-family: 'IBM Plex Sans Arabic' !important;
+    direction: ltr;
+}
+
+#quote {
+    transition: opacity 1s ease-out;
+    /* display: none; */
+}
+#main-panel {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+#panel {
+    z-index: 10;
+}
+
+#first-verse {
+    margin-left: 40px;
+    font-weight: 400;
+}
+
+#second-verse {
+    margin-right: 40px;
+    font-weight: 400;
+}
+
+#hafez {
+    position: absolute;
+    bottom: 5%;
+    left: 51%;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#hafez-image {
+    /* border-radius: 5px; */
+    /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0 0 0 / 0%) 100%); */
+}
+
+/* Heart animation */
+.heart {
+    position: fixed;
+    bottom: -50px; /* Start below the viewport */
+    font-size: 2rem;
+    color: white;
+    opacity: 0.8;
+    animation: moveUp 5s linear infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+/* Create multiple hearts with different delays and properties */
+.heart:nth-child(1) { left: 10%; animation-duration: 4s; animation-delay: 0s; }
+.heart:nth-child(2) { left: 20%; animation-duration: 5s; animation-delay: 1s; }
+.heart:nth-child(3) { left: 10%; animation-duration: 3s; animation-delay: 2s; }
+.heart:nth-child(4) { left: 20%; animation-duration: 6s; animation-delay: 3s; }
+.heart:nth-child(5) { left: 30%; animation-duration: 4.5s; animation-delay: 1.5s; }
+.heart:nth-child(6) { left: 40%; animation-duration: 5.5s; animation-delay: 2.5s; }
+.heart:nth-child(7) { left: 50%; animation-duration: 4s; animation-delay: 3.5s; }
+.heart:nth-child(8) { left: 60%; animation-duration: 6.5s; animation-delay: 2s; }
+.heart:nth-child(9) { left: 70%; animation-duration: 5s; animation-delay: 0.5s; }
+
+.columns.with-lines {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column:not(:first-child) {
+    border-right: 1px solid #ddd; /* Vertical line between columns */
+}
+
+.func-button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.info-title {
+    margin-left: 5px;
+}
+
+.chain-text {
+    color: #f1b90a;
+}
+
+.chain-image {
+    margin-bottom: 15px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* color: #f977ac; text-shadow: 1px 4px 7px rgba(0,0,0,0.21); */
+
+.love-time {
+    display: inline-block;
+    text-shadow: 0.075em 0.075em 0 hsl(334.64deg 72.93% 73.92%);
+}
+
+.tought-button{
+    font-size: medium;
+    height: 50px;
+}
+
+.request-button{
+    font-size: medium;
+    height: 50px;
+}
+
+.cut-button{
+    font-size: medium;
+    height: 50px;
+}
+
+.token-button{
+    font-size: medium;
+    height: 50px;
+}
+
+.tought-button:hover {
+    background-color: rgb(47 181 116);
+    color: white;
+    /* font-weight: 900; */
+}
+
+.cut-button:hover {
+    background-color: rgb(247, 92, 92);
+    color: white;
+    /* font-weight: 900; */
+}
+
+.wallet-input {
+    margin-bottom: 13px;
+}
+
+.crypto-address {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    direction: ltr;
+}
+
+#wallet-info {
+    display: none;
+}
+
+#wallet-balance {
+    direction: ltr;
+}
+
+#wallet-tol-balance {
+    direction: ltr;
+}
+
+.verse {
+    /* font-size: small; */
+    font-weight: 400;
+}
+
+#main-title {
+    text-shadow: 0 1px 0 #fb84b4, 0 2px 0 #fa95bf, 0 3px 0 #fb9dc4, 0 4px 0 #fcaecf, 0 5px 0 #fcb6d6, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    color: white;
+    margin-bottom: 50px;
+}
+
+.reload-button {
+    display: block;
+    float: inline-end;
+}
+
+.love-banner {
+    display: none;
+}
+
+.ask-out-button {
+    height: 100%;
+    margin-left: 10px;
+}
+
+#sunny-animation {
+    margin-right: 5px;
+    width: 30px;
+}
+
+#rainy-animation {
+    width: 40px;
+    align-self: center;
+}
+
+svg {
+    align-self: center;
+}
+
+[data-tooltip]:not(.is-disabled).has-tooltip-active::after, [data-tooltip]:not(.is-disabled).has-tooltip-active::before, [data-tooltip]:not(.is-disabled):focus::after, [data-tooltip]:not(.is-disabled):focus::before, [data-tooltip]:not(.is-disabled):hover::after, [data-tooltip]:not(.is-disabled):hover::before, [data-tooltip]:not(.is-loading).has-tooltip-active::after, [data-tooltip]:not(.is-loading).has-tooltip-active::before, [data-tooltip]:not(.is-loading):focus::after, [data-tooltip]:not(.is-loading):focus::before, [data-tooltip]:not(.is-loading):hover::after, [data-tooltip]:not(.is-loading):hover::before, [data-tooltip]:not([disabled]).has-tooltip-active::after, [data-tooltip]:not([disabled]).has-tooltip-active::before, [data-tooltip]:not([disabled]):focus::after, [data-tooltip]:not([disabled]):focus::before, [data-tooltip]:not([disabled]):hover::after, [data-tooltip]:not([disabled]):hover::before {
+    font-family: 'IBM Plex Sans Arabic';
+}
